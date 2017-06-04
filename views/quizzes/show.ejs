@@ -1,6 +1,6 @@
 
 <div class="right">
-    <small> (by <%= quiz.Author ? quiz.Author.username : "Anómino" %>) </small>
+    <small> (by <%= quiz.Author ? quiz.Author.username : "Anónimo" %>) </small>
 </div>
 
 <h1>
@@ -16,7 +16,11 @@
 
 
 <h1>
-    Pistas:
+  
+    Pistas: 
+     <div class="right">
+         <span id="Author"> (by <%= quiz.Tips.Author ? quiz.Tips.Author.username : "Anónimo" %>) </span>
+</div>
 </h1>
 
 <% if (session.user) { %>
